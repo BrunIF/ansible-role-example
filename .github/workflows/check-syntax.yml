@@ -1,7 +1,7 @@
 ---
 name: Ansible and YAML Lint
 
-on: [push, pull_request]
+on:
 
 jobs:
   build:
