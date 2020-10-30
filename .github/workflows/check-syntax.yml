@@ -1,6 +1,6 @@
 ---
 name: Ansible and YAML Lint
-on: [push, pull_request]
+on: [ "push", "pull_request" ]
 jobs:
   check-syntax:
     runs-on: ubuntu-latest
