@@ -5,8 +5,7 @@ jobs:
   check-syntax:
     runs-on: ubuntu-latest
       steps:
-        - name: Get code
-          uses: actions/checkout@v2
+        - uses: actions/checkout@v2
         - name: Ansible list
           uses: ansible/ansible-lint-action@151b9a2
         - name: YAML Lint
