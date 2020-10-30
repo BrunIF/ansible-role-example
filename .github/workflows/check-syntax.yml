@@ -12,6 +12,8 @@ jobs:
       - name: Get code
         uses: actions/checkout@v2
       - name: Ansible list
-        uses: ansible/ansible-lint-action@v4.1.0
+        uses: ansible/ansible-lint-action@151b9a2
+        with:
+          targets: "./"
       - name: YAML Lint
         uses: ibiqlik/action-yamllint@v2
