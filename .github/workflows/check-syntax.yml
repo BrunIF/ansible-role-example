@@ -1,6 +1,9 @@
 ---
 name: Ansible and YAML Lint
-on: [ "push", "pull_request" ]
+
+on:
+  push:
+
 jobs:
   check-syntax:
     runs-on: ubuntu-latest
@@ -8,7 +11,6 @@ jobs:
       - name: Get code
         uses: actions/checkout@v2
       - name: Ansible list
-        uses: ansible/ansible-lint-action@151b9a2
+        uses: ansible/ansible-lint-action@master
       - name: YAML Lint
-        uses: ibiqlik/action-yamllint@v1
-
+        uses: ibiqlik/action-yamllint@v2
