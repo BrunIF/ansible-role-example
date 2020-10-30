@@ -1,7 +1,7 @@
 ---
 name: Ansible and YAML Lint
 
-on:
+on: [push, pull_request]    # yamllint disable-line rule:truthy
 
 jobs:
   build:
